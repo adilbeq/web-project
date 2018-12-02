@@ -1,0 +1,346 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;  
+  min-height: 100%;
+  position: relative;
+  font-size: 14px;
+  color: #222;
+}
+.wrapper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+header .section_container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(82, 92, 118, 0.3);
+  border-radius: 10px;
+}
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 70px;
+}
+section .section_container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  section .section_container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+section .left_side, section .right_side {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+section .content {
+  padding: 50px;
+}
+section .left_content {
+  padding: 50px;
+  padding-left: 0;
+}
+section .right_content {
+  padding: 50px;
+  padding-right: 0;
+}
+@media screen and (max-width: 991px) {
+  section {
+    padding: 40px 20px;
+  }
+  section img {
+    width: 100%;
+  }
+  section .left_side {
+    margin-bottom: 30px;
+  }
+  section .left_side, section .right_side {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+  section .content, section .left_content, section .right_content {
+    padding: 20px;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  z-index: 99999;
+}
+header .section_container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 15px 35px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(82, 92, 118, 0.3);
+  border-radius: 10px;
+}
+header .mobile-nav-icon {
+  display: none;
+  cursor: pointer;
+  color: #1c2c43;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  margin-left: 45px;
+  display: inline-block;
+}
+header nav ul li a {
+  color: #1c2c43;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 300ms;
+}
+header nav ul li a:hover {
+  color: #fc2a00;
+}
+@media screen and (max-width: 991px) {
+  header {
+    margin-top: 0px;
+  }
+  header .section_container {
+    border-radius: 0;
+  }
+  header .mobile-nav-icon {
+    display: block;
+  }
+  header .show-mobile-nav {
+    display: none;
+  }
+  header nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header nav ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  header nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.logo a {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+.logo a span {
+  color: #ffe477;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #272e40;
+}
+.header h1 {
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #272e40;
+}
+.header h3 {
+    margin-bottom: 10px;
+}
+.header .section_container {
+  padding-top: 150px;
+  background: url('../img/myBorn2codelogo.png') right top no-repeat;
+  justify-content: space-between;
+}
+.header h1 {
+  margin-bottom: 20px;
+}
+.header h3 {
+  margin-bottom: 10px;
+}
+.header .right_side {
+  width: 100%;
+  max-width: 539px;
+}
+.header .left_side {
+  width: 100%;
+  max-width: 420px;
+}
+.header .t_watch_options {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header .t_watch_options .color_box ul {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.header .t_watch_options .color_box ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  border: 4px solid #e4e6ea;
+}
+.header .t_watch_options .color_box ul li.active {
+  border: 4px solid #ccc;
+}
+.header .t_watch_options .color_box ul li.c_black {
+  background: #000;
+}
+.header .t_watch_options .color_box ul li.c_grey {
+  background: #a2a2a2;
+}
+.header .t_watch_options .color_box ul li.c_orange {
+  background: #ffd200;
+}
+.header .t_watch_options .color_box ul li.c_white {
+  background: #fff;
+}
+.header .t_watch_options .quantity input {
+  padding: 10px;
+  width: 60px;
+  border-radius: 30px;
+  border: 4px solid #e4e6ea;
+  text-align: center;
+}
+.header .t_watch_options .size_box {
+  margin-top: 30px;
+  width: 100%;
+}
+.header .t_watch_options .size_box ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .t_watch_options .size_box ul li {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  border: 4px solid #e4e6ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.header .t_watch_options .size_box ul li.active {
+  background: #ffd200;
+}
+.header .t_watch_options .sub_title {
+  margin-bottom: 10px;
+  display: block;
+  color: #858585;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media screen and (max-width: 991px) {
+  .header {
+    background: url('../img/myBorn2codelogo.png') center bottom no-repeat;
+  }
+  .header .section_container {
+    background: none;
+    padding-top: 70px;
+  }
+  .header .t_watch_options {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .header .left_side, .header .right_side {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .header .tabs_content {
+    margin: 0 auto;
+  }
+  .header .small {
+    margin-bottom: 40px;
+  }
+}
+.tabs_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.tab_btn {
+  border-radius: 10px;
+}
+
+.tabs_nav .tab_btn {
+  cursor: pointer;
+}
+.btn {
+  transition: all 300ms;
+  cursor: pointer;
+  flex: 0 0 auto;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn_container {
+  flex: 0 0 auto;
+  margin-top: 30px;
+}
+.btn_container .btn {
+  margin-right: 20px;
+}
+.btn_default {
+  padding: 15px 25px;
+  font-size: 18px;
+}
+.btn_orange {
+  color: #fff;
+  background: #fc2a00;
+}
+.btn_orange:hover {
+  background: #ea3916;
+}
+.btn_orange:active {
+  background: #ba2c0f;
+}
+.btn_shadow_hover {
+  box-shadow: 0 0 0 rgba(82, 92, 118, 0.3);
+}
+.btn_shadow_hover:hover {
+  box-shadow: 0 0 30px rgba(82, 92, 118, 0.3);
+}
+.btn_shadow {
+  box-shadow: 0 0 30px rgba(82, 92, 118, 0.3);
+}
+p.small {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 20px;
+}
