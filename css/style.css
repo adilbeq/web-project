@@ -114,6 +114,13 @@ header .section_container {
   box-shadow: 0 0 30px rgba(82, 92, 118, 0.3);
   border-radius: 10px;
 }
+.pagination-page{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
 .all-cent{
   text-align: center;
 }
@@ -928,4 +935,29 @@ button {
   .footer .section_container p {
     text-align: center;
   }
+}
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px;
+   width: 268px;
+}
+.rounded {
+   border-radius: 20px;
+}
+.yellow  { 
+  background-color: #eec111; 
+}
+.margin-sel{
+  display: inline-block;
+  margin-bottom: 15px;
 }
