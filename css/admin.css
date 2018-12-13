@@ -1,0 +1,31 @@
+.crud-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+.crud{
+	border: 1px solid black;
+	border-radius: 20px;
+	margin: 10px;
+	flex-basis: 0;
+	flex-grow: 1;
+	height: 300px;
+	padding: 25px;
+}
+.mt{
+	margin-top: 50px;
+}
+button{
+	margin: 10px 0;
+	border: 2px solid green;
+	border-radius: 20px;
+	padding: 8px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+}
+input{
+	margin: 3px 0;
+	font-weight: bold;
+	padding: 4px;
+	border-radius: 20px;
+}
